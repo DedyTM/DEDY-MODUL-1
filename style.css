@@ -1,0 +1,143 @@
+/* Reset dan Style Dasar */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #d2b48c; /* Mocca */
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    background: #fffaf0; /* Warna krem untuk kontras */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto 20px auto;
+}
+
+h2,
+h3 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #5a3e36; /* Warna coklat tua */
+}
+
+/* Form Styling */
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #5a3e36; /* Warna coklat tua */
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #a0522d; /* Mocca gelap */
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #8b4513; /* Mocca lebih gelap */
+    box-shadow: 0 0 5px rgba(139, 69, 19, 0.3);
+}
+
+textarea {
+    resize: none;
+    min-height: 80px;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 12px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+button {
+    background-color: #8b4513; /* Mocca lebih gelap */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+    min-width: 120px;
+}
+
+button:hover {
+    background-color: #5a3e36; /* Mocca tua */
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th,
+td {
+    border: 1px solid #a0522d; /* Mocca gelap */
+    padding: 12px;
+    text-align: left;
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+th {
+    background-color: #8b4513; /* Mocca lebih gelap */
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background-color: #f5deb3; /* Warna wheat */
+}
+
+tr:hover {
+    background-color: #f1e0c6; /* Warna mocca terang */
+}
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+
+    th,
+    td {
+        padding: 8px;
+        font-size: 14px;
+    }
+}
